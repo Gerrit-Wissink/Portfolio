@@ -1,0 +1,396 @@
+/* Gerrit Wissink */
+/* ISTE 240 Individual Project */
+/* Spring 2024*/
+/* Stylesheet */
+
+
+/*                 */
+/* Styles for Tags */
+/*                 */
+
+
+:root {
+    --green: #0f532f;
+    --background-color: beige;
+}
+
+html {
+    /* position: fixed; */
+    max-width: 100vw;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 3%;
+    min-height: 100vh;
+}
+
+p {
+    padding: 15px 5%;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+img {
+    object-fit: contain;
+}
+
+h1 {
+    margin-bottom: 5%;
+    font-size: 30px;
+    margin-left: 5vw;
+}
+
+h4 {
+    margin: 5%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+a, a:visited {
+    color: var(--green);
+}
+
+a:active {
+    color: #0b3a21;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--green);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+
+/*                    */
+/* Styles for Classes */
+/*                    */
+
+
+.hidden-rule {
+    visibility: hidden;
+    border-width: 0px;
+}
+
+.hidden-link {
+    visibility: hidden;
+    font-size: 0px;
+}
+
+.cards {
+    margin: 0px 5%;
+    border: 2px solid black;
+    /* height: 100px; */
+    object-fit: contain;
+    border-radius: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    /* gap: 10vw; */
+    margin-bottom: 5%;
+    max-width: 600px;
+    max-height: 300px;
+}
+
+.card-holder p {
+    margin: 20px 0;
+}
+
+.cards img {
+    max-width: 100%;
+    border-radius: 5%;
+    max-height: 100%;
+}
+
+.cards h2, .cards a {
+    font-weight: bold;
+    padding: 40% 10%;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.icon-holder {
+    width: 100%;
+    display: flex;
+    grid-template-columns: 50% 50%;
+    gap: 50%;
+    background-color: var(--green);
+}
+
+.icon-holder img {
+    width: 25vw;
+}
+
+.icon, #menu-icon {
+    max-width: 100px;
+}
+
+.here {
+    color: rgb(18, 147, 18);
+    background-color: transparent;
+}
+
+.comment {
+    border-radius: 10px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5%;
+    max-width: 80%;
+    max-height: 300px;
+    margin-bottom: 3%;
+}
+
+.comment h3 {
+    font-size: 1.5rem;
+    color: var(--green);
+    padding: 10px 3%;
+    margin-bottom: 20px;
+}
+
+.comment p{
+    padding: 0 3%;
+    margin-bottom: 300px;
+}
+
+.makeComment {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 40px; 
+    font-size: 1.3rem;
+    border-radius: 5%;
+}
+
+.makeComment h3 {
+    font-size: 1.5rem;
+    color: var(--green);
+}
+
+
+
+
+
+/*                 */
+/* Styles for ID's */
+/*                 */
+
+
+#front-arrow, #back-arrow {
+    cursor:pointer;
+    background-color: rgb(0,0,0,0.5);
+    position: absolute;
+    top: 17%;
+    right: 0;
+    max-width: 50px;
+    width:10%;
+    z-index: 2;
+}
+
+#back-arrow {
+    left: 0;
+}
+
+
+#hidden-nav {
+    width: 0vw;
+    height: 0vh;
+    padding: 0px;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 99;
+    /* transition: 0.5s; */
+}
+
+#map {
+    visibility: hidden;
+    align-items: center;
+    object-fit: contain;
+    margin: 0px 5%;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+#desktop-nav {
+    height: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--green);
+    width: 100vw;
+    visibility: hidden;
+    font-size: 25px;
+    max-height: 130px;
+}
+
+#desktop-nav a , #hidden-nav a, footer a{
+    color: white;
+    padding: 5%;
+}
+
+#desktop-nav a:hover, #hidden-nav a:hover, footer a:hover{
+    background-color: #0b3a21;
+}
+
+#desktop-nav a:visited, #hidden-nav a:visited, footer a:visited {
+    color:white;
+}
+
+#desktop-nav a:active, #hidden-nav a:active, footer a:active {
+    color:rgb(209, 203, 203)
+}
+
+#contacts {
+    margin-left: 5vw;
+}
+
+#contacts h2 {
+    font-size: 20px;
+}
+
+#history {
+    margin: 0px 5vw;
+    margin-bottom: 5%;
+}
+
+#close-icon {
+    max-width: 0px;
+}
+
+#hero, #hero_wide, #name, #comment {
+    width: 100%;
+}
+
+#hero_wide {
+    max-height: 490px;
+}
+
+#submit {
+    font-size: 1rem;
+    margin: auto;
+    padding: 8px 12px;
+    color: var(--green);
+    background-color: transparent;
+    border: 3px solid var(--green);
+    border-radius: 7px;
+}
+
+
+
+/*                           */
+/* Media Queries for Desktop */
+/*                           */
+
+
+
+
+/* MIN-WIDTH: 500px */
+
+@media screen and (min-width: 500px) {
+    
+    #front-arrow, #back-arrow {
+        top: 20%;
+    }
+
+    .icon-holder {
+        gap: 60%;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+}
+
+/* MIN-WIDTH: 600px */
+
+@media screen and (min-width: 600px) {
+
+    #front-arrow, #back-arrow {
+        top: 25%;
+    }
+
+    html {
+        position: relative;
+    }
+
+    .icon-holder, #menu, #menu-icon, #hidden-nav * {
+        visibility: hidden;
+        height: 0;
+    }
+
+    .here {
+        background-color: #0b3a21;
+        color: white;
+    }
+
+    .here:hover {
+        background-color: #020b06;
+    }
+
+    .icon-holder {
+        visibility: hidden;
+        height: 0;
+    }
+
+    #desktop-nav {
+        visibility: visible;
+        height: auto;
+    }
+
+    .cards h2, .cards a {
+        font-size: 1.5rem;
+    }
+}
+
+/* MIN-WIDTH: 950px */
+
+@media screen and (min-width:950px) {
+
+    .comment, .makeComment {
+        max-width: 600px;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    #contacts h2 {
+        font-size:2.5vw;
+    }
+
+    #desktop-nav a, footer a {
+        padding: 3% 4%;
+    }
+
+    .card-holder, #landing-page {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-left: 3%;
+    }
+
+    .cards h2, .cards a {
+        font-size: 1.2rem;
+    }
+
+    #map {
+        visibility: visible;
+    }
+}
